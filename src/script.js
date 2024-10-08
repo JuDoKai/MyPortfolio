@@ -1,14 +1,9 @@
-const navToOpen = document.getElementById("nav-phone-to-open");
-const navToClose = document.getElementById("nav-phone-to-close");
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-function openNav() {
-    if (navToOpen.style.display === "none" || navToOpen.style.display === "") {
-        navToOpen.style.display = "unset"; 
-        navToClose.style.display = "none"; 
-    } else {
-        navToOpen.style.display = "none";  
-        navToClose.style.display = "unset";
-    }
-}
-navToOpen.addEventListener("click", openNav);
-navToClose.addEventListener("click", openNav);
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

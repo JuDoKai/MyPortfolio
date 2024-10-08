@@ -8,40 +8,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="icons/favicon.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Jude Matembe - Portfolio</title>
     </head>
     <body>
         <nav>
-            <a href="index.html">JM</a>
+            <a id="logo" href="index.html">JM</a>
             <ul>
-                <li>Home</li>
-                <li>Skills</li>
-                <li>Projets</li>
-                <li>Contact</li>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#phantom-skill">Skills</a></li>
+                <li><a href="#phantom-projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <img id="nav-phone-to-open" src="icons/bars-solid.svg" alt="menu" height="30px" width="40px">
-            <img id="nav-phone-to-close" src="icons/x-solid.svg" alt="menu" height="30px" width="40px"> 
-
         </nav>
-        <main>
+        <main id="main">
 
             <section id="home">
                 <div id="container">
                     <h1>Jude Matembe</h1>
-                    <h2>Développeur Web</h2>
+                    <h2>Développeur Full Stack</h2>
                     <div id="line"></div>
                     <div id="about">
-                        <p>Titulaire d'une licence en informatique, je suis passionné par le <strong>Développement Web</strong>. À la recherche de nouvelles opportunités pour mettre mes compétences en pratique. Basé en  <strong>Île-de-France</strong>, je suis prêt à me déplacer sur le territoire national (hors DOM-TOM) pour des projets <strong>stimulants</strong> et <strong>enrichissants</strong>.</p>
+                        <p>Titulaire d'une licence en informatique, je me suis spécialisé dans le <strong>Développement Web</strong>. À la recherche de nouvelles opportunités (Front-End et/ou Back-End) pour mettre mes <strong><a href="#phantom-skill">compétences</a> </strong>en pratique. Basé en  <strong>Île-de-France</strong>, je suis prêt à me déplacer sur le territoire national (hors DOM-TOM).</p>
                     </div>
                 </div>
-                <a id="cv" href="CV Alternance Matembe.pdf" target="_blank">CV en ligne <img src="icons/arrow-up-right-from-square-solid.svg" alt="arrow-up-right-from-square-solid" height="15px" width="15px"></a>
+                <a id="cv" href="CV-Matembe.pdf" target="_blank">CV en ligne <img src="icons/arrow-up-right-from-square-solid.svg" alt="arrow-up-right-from-square-solid" height="15" width="15"></a>
                
             </section>
+            <span id="phantom-skill"></span>
             <section id="skill">
-                <div id="section-title">Skills</div>
+                <div class="section-title">Skills</div>
                 <div id="skill-container">
-                    <div id="hardskill">
-                        
+                    <div id="hardskill">         
                             <div id="div1">
                                 <img src="icons/vuejs-brands-solid.svg" alt="Vue 3">
                                 <p>Vue 3</p>
@@ -60,53 +58,96 @@
                                 <img src="icons/github-brands-solid.svg" alt="Git">
                                 <p>Git</p>
                             </div>
-        
                     </div>
                     <div id="softskill">
-                        <div id="gauge-bar-container">
+                        <div class="gauge-bar-container">
                             <p>Créativité </p>
-                            <div id="gauge-bar">
-                                <div id="gauge-bar-content"></div>
+                            <div class="gauge-bar">
+                                <div class="gauge-bar-content"></div>
                             </div>
                         </div>
-                        <div id="gauge-bar-container">
+                        <div class="gauge-bar-container">
                             <p>Motivation </p>
-                            <div id="gauge-bar">
-                                <div id="gauge-bar-content"></div>
+                            <div class="gauge-bar">
+                                <div class="gauge-bar-content"></div>
                             </div>
                         </div>
-                        <div id="gauge-bar-container">
+                        <div class="gauge-bar-container">
                             <p>Curiosité </p>
-                            <div id="gauge-bar">
-                                <div id="gauge-bar-content"></div>
+                            <div class="gauge-bar">
+                                <div class="gauge-bar-content"></div>
                             </div>
                         </div>
-                        <div id="gauge-bar-container">
+                        <div class="gauge-bar-container">
                             <p>Esprit d'équipe </p>
-                            <div id="gauge-bar">
-                                <div id="gauge-bar-content"></div>
+                            <div class="gauge-bar">
+                                <div class="gauge-bar-content"></div>
                             </div>
                         </div>
-                        <div id="gauge-bar-container">
+                        <div class="gauge-bar-container">
                             <p>Autonomie </p>
-                            <div id="gauge-bar">
-                                <div id="gauge-bar-content"></div>
+                            <div class="gauge-bar">
+                                <div class="gauge-bar-content"></div>
                             </div>
                         </div>                  
                     </div>
                 </div>
                 
             </section>
-            <section id="projets">projets</section>
+            <span id="phantom-projets"></span>
+
+            <section id="projets">
+                <div class="section-title">Projets</div>
+                <div id="card-container">
+                    <details class="card">   
+                        <summary> 
+                            <span class="space-invaders">
+                                <h1>Space Invaders</h1>
+                                <h4>Jeu sur navigateur</h4>
+                                <p>Html/Css/JavaScript</p>
+                            </span>
+                        </summary>
+                        <div class="summary-content">
+                            <p>Projet de recréation du célèbre jeu d'arcarde Space Invaders</p>
+                            <div class="button-container">
+                                <a href="https://judokai.github.io/Space-Invaders/" target="_blank">Accès au projet</a>
+                                <a href="https://github.com/JuDoKai/Space-Invaders" target="_blank">Accès au code</a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="card">   
+                        <summary> 
+                            <span class="space-invaders">
+                                <h1>Azul App</h1>
+                                <h4>Landing Page</h4>
+                                <p>Html/Css/JavaScript/Figma/Bootstrap</p>
+                            </span>
+                        </summary>
+                        <div class="summary-content">
+                            <p>Réalisée au cours d'un stage de 2 mois pour le compte de l'entreprise Azul-App</p>
+                            <div class="button-container">
+                                <a href="https://judokai.github.io/Azul-App-demo-/" target="_blank">Accès au projet</a>
+                                <a href="https://github.com/JuDoKai/Azul-App-demo-" target="_blank">Accès au code</a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <div class="card">
+                        <h1>En construction...</h1>
+                    </div>
+                </div>
+            </section>
 
 
             <section id="contact">
-                <div id="section-title">Contact</div>
+                <div class="section-title">Contact</div>
                 <p>j.matembe.ametu@gmail.com</p>
             </section>
         </main>
         <footer>© Copyright 2024 - Jude Matembe</footer>
+        <script src="script.js"></script>
     </body>
 
-    <script src="script.js"></script>
+    
 </html>
